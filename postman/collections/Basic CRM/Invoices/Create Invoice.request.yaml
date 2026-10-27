@@ -1,0 +1,21 @@
+$kind: http-request
+name: Create Invoice
+method: POST
+url: '{{base_url}}/invoices'
+order: 2000
+headers:
+  - key: Content-Type
+    value: application/json
+  - key: Accept
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "total": "1500.00",
+      "items": [
+        { "description": "Consulting", "amount": "1500.00" }
+      ],
+      "customer_id": 1,
+      "status": false
+    }

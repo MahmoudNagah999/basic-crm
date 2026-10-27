@@ -1,0 +1,8 @@
+$kind: http-request
+name: List Projects
+method: GET
+url: '{{base_url}}/projects'
+order: 1000
+headers:
+  - key: Accept
+    value: application/json

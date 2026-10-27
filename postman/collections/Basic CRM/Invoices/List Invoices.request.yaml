@@ -1,0 +1,8 @@
+$kind: http-request
+name: List Invoices
+method: GET
+url: '{{base_url}}/invoices'
+order: 1000
+headers:
+  - key: Accept
+    value: application/json

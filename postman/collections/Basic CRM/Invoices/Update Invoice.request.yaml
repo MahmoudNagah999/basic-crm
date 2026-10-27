@@ -1,0 +1,25 @@
+$kind: http-request
+name: Update Invoice
+method: PUT
+url: '{{base_url}}/invoices/:id'
+order: 4000
+pathVariables:
+  - key: id
+    value: '1'
+headers:
+  - key: Content-Type
+    value: application/json
+  - key: Accept
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "total": "2000.00",
+      "items": [
+        { "description": "Consulting", "amount": "1500.00" },
+        { "description": "Support", "amount": "500.00" }
+      ],
+      "customer_id": 1,
+      "status": true
+    }

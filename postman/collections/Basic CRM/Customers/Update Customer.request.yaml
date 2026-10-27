@@ -1,0 +1,15 @@
+$kind: http-request
+method: PUT
+url: "{{base_url}}/customers/:id"
+order: 4000
+pathVariables:
+  id: "1"
+headers:
+  Content-Type: application/json
+  Accept: application/json
+body:
+  type: json
+  content: |-
+    {
+      "name": "Acme Corp Updated"
+    }

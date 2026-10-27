@@ -1,0 +1,11 @@
+$kind: http-request
+name: Get Note
+method: GET
+url: '{{base_url}}/notes/:id'
+order: 3000
+pathVariables:
+  - key: id
+    value: '1'
+headers:
+  - key: Accept
+    value: application/json

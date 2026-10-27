@@ -1,0 +1,9 @@
+$kind: collection
+name: Basic CRM
+description: |-
+  REST API collection for the Basic CRM application.
+  Covers full CRUD operations for Customers, Projects, Invoices, and Notes.
+variables:
+  - key: base_url
+    value: 'http://localhost:8000/api'
+    description: Base URL for the CRM API

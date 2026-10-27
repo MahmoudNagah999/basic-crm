@@ -1,0 +1,19 @@
+$kind: http-request
+name: Create Project
+method: POST
+url: '{{base_url}}/projects'
+order: 2000
+headers:
+  - key: Content-Type
+    value: application/json
+  - key: Accept
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "project_name": "Website Redesign",
+      "status": true,
+      "customer_id": 1,
+      "project_cost": "4999.99"
+    }

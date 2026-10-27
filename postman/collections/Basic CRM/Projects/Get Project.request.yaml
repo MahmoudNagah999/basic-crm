@@ -1,0 +1,11 @@
+$kind: http-request
+name: Get Project
+method: GET
+url: '{{base_url}}/projects/:id'
+order: 3000
+pathVariables:
+  - key: id
+    value: '1'
+headers:
+  - key: Accept
+    value: application/json
